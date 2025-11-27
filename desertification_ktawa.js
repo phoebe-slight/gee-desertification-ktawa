@@ -1,21 +1,7 @@
-//Google Earth Engine
-//Adapted from: Desertification detection script by Dr Louise Rayne, Newcastle University
-//Original author contact: louiserayne@googlemail.com (louise.rayne@ncl.ac.uk)
-//Adapter/maintainer: Phoebe Slight, 2025 (github.com/phoebe-slight)
+//========
+//  AOI
+//========
 
-//Summary:
-//Sentinel-2 L2A (cloud/cirrus masked, bands B1–B12, B8A) + Tasseled Cap (brightness, greenness, wetness)
-//Sentinel-1 GRD IW VV (ascending + descending mean)
-//Random Forest classification using user-provided training polygons
-//Land-cover classes: Vegetated(10), Bare(60), Desertified(110), Built-up(150), Mountainous(200)
-
-// Notes:
-//Replace asset paths with your own GEE FeatureCollections before running.
-//If reusing, please retain this attribution header.
-
-//=====================
-//Area of Interest (AOI)
-//===================== 
 // Define the Area of Interest (AOI). Replace with your own FeatureCollection if using a different region.
 
 var geometry = ee.FeatureCollection("users/phoebeslight1/Ktawa_Overall_Geometry");
